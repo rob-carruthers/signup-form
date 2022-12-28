@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+#container {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 0;
+    flex-grow: 1;
+}
+
+#sidebar {
+    background-image: url("../media/background.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: right;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#signup-container {
+    display: flex;
+    flex-direction: column;
+}
