@@ -9,7 +9,7 @@
 }
 
 a {
-    color: rgb(244, 244, 244);
+    color: #596D48;
 }
 
 body {
@@ -38,6 +38,10 @@ body {
     flex-direction: column;
     color: rgb(244, 244, 244);
     justify-content: space-between;
+}
+
+#sidebar a {
+    color: rgb(244, 244, 244);
 }
 
 #odin-logo {
@@ -93,4 +97,32 @@ input {
 
 input:focus {
     box-shadow: 1px 1px 6px #777777;
+}
+
+#account {
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+button#createAccount {
+    background-color: #596D48;
+    border: 0;
+    box-shadow: 2px 2px 6px #777777;
+    border-radius: 4px;
+    color: rgb(244, 244, 244);
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button#createAccount:hover {
+    background-color: #819e68;
+    cursor: pointer;
+}
+
+button#createAccount:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 4px #777777;
 }
