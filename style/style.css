@@ -86,3 +86,11 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+input {
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    box-shadow: 1px 1px 6px #777777;
+}
