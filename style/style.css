@@ -29,7 +29,7 @@ body {
 
 #sidebar {
     background-image: url("../media/background.jpg");
-    background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: right;
