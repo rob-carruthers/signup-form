@@ -7,6 +7,10 @@ a {
     color: rgb(244, 244, 244);
 }
 
+:root {
+    --sidebar-width: 35%;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -28,7 +32,7 @@ body {
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: right;
-    flex-basis: 35%;
+    flex-basis: var(--sidebar-width);
     display: flex;
     flex-direction: column;
     color: rgb(244, 244, 244);
@@ -55,4 +59,14 @@ body {
 #signup-container {
     display: flex;
     flex-direction: column;
+    min-width: calc(100% - var(--sidebar-width));
+}
+
+#form {
+    box-shadow: 5px 5px 5px 5px;
+}
+
+.labeltext {
+    font-size: 24px;
+    font-weight: 500;
 }
