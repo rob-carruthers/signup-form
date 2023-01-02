@@ -3,12 +3,13 @@
     src: url("../media/Norse-Bold.otf");
 }
 
-a {
-    color: rgb(244, 244, 244);
+:root {
+    --sidebar-width: min(35%, 600px);
+    --signup-width: calc(100% - var(--sidebar-width))
 }
 
-:root {
-    --sidebar-width: 35%;
+a {
+    color: rgb(244, 244, 244);
 }
 
 body {
@@ -59,14 +60,29 @@ body {
 #signup-container {
     display: flex;
     flex-direction: column;
-    min-width: calc(100% - var(--sidebar-width));
+    min-width: var(--signup-width);
 }
 
 #form {
-    box-shadow: 5px 5px 5px 5px;
+    box-shadow: 2px 2px 8px #999999;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 40px;
 }
 
 .labeltext {
     font-size: 24px;
     font-weight: 500;
+}
+
+.formrow {
+    display: flex;
+    gap: 40px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+.formentry {
+    display: flex;
+    flex-direction: column;
 }
